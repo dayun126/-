@@ -2,7 +2,7 @@
 chrome.action.onClicked.addListener(async () => {
   try {
     // 获取扩展页面的URL
-    const extensionUrl = chrome.runtime.getURL("popup.html");
+    const extensionUrl = chrome.runtime.getURL("index.html");
     
     // 查询所有标签页，查找已打开的扩展页面
     const tabs = await chrome.tabs.query({});
